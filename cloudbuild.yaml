@@ -1,5 +1,5 @@
 steps:
 - name: 'gcp.io/cloud-builder/docker'
-  args: ['build', '-t', 'gc.io/$PROJECT_ID/cloudbuild-demo', '.']
+  args: ['build', '-t', '.']
 images:
-- 'gcp.io/$PROJECT_ID/cloudbuild-demo'
+- 'gcp.io/$PROJECT_ID/alpine'
