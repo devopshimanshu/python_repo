@@ -1,3 +1,5 @@
 FROM alpine
 COPY quickstart.sh /
-CMD ["/quickstart.sh"]
+ARG firstname=_FIRSTNAME
+ARG lastname=_LASTNAME
+CMD ["/quickstart.sh", firstname, lastname]
