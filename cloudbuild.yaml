@@ -1,4 +1,3 @@
 steps:
 - name: 'ubuntu'
   args: ['sh', './quickstart.sh', $_FIRSTNAME, $_LASTNAME]
-images: ['gcr.io/$PROJECT_ID/alpine:latest']
