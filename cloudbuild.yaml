@@ -1,6 +1,6 @@
 steps:
 - name: 'ubuntu'
-  args: ['sh', './quickstart.sh', _FIRSTNAME, _LASTNAME]
+  args: ['sh', './quickstart.sh', $_FIRSTNAME, $_LASTNAME]
 - name: 'gcr.io/cloud-builders/docker'
   args: ['build', '-t', 'gcr.io/$PROJECT_ID/alpine:latest', '.']
 images: ['gcr.io/$PROJECT_ID/alpine:latest']
